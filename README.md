@@ -26,6 +26,16 @@ O objetivo é criar um agente conversacional capaz de atuar como um mentor de ca
 
 ---
 
+## 🛠️ Prompt do Agente
+
+O coração deste projeto é o prompt estruturado que define a personalidade, regras e lógica do agente. Você pode acessar a versão mais recente diretamente abaixo:
+
+> 🔗 **Acesse o Prompt:** [Agente_1_TechCareer_Pathfinder.md](https://github.com/celloweb-ai/IA_Mentor_de_Carreira/blob/main/src/Agente_1_TechCareer_Pathfinder.md)
+
+Sinta-se à vontade para testá-lo em LLMs como ChatGPT, Claude ou Gemini e adaptar conforme necessário!
+
+---
+
 ## ✨ Funcionalidades Principais
 
 - 🎯 **Entrevista Estruturada:** 7 perguntas estratégicas para mapear o perfil do usuário.
@@ -72,16 +82,6 @@ Exemplos de como o **TechCareer Pathfinder** se adapta a diferentes perfis:
 
 ---
 
-## 🛠️ Tecnologias & Conceitos
-
-Este projeto utiliza uma abordagem agnóstica de plataforma, focando na lógica conversacional e estruturação de dados.
-
-* **Core:** Lógica de Decisão Estruturada
-* **Interface:** Markdown (Documentação) & Conversational Design
-* **Integração:** JSON (para troca de dados entre agentes)
-
----
-
 ## 🚀 Como Executar
 
 Este é um projeto de **design de agente**. Ele pode ser implementado em diversas plataformas:
@@ -100,13 +100,13 @@ Sugestões são sempre bem-vindas! Sinta-se à vontade para abrir uma *issue* co
 
 ## 📬 Autor
 
-<img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/235125755?s=400&u=17eb556372d0509c20c85a9654d83823adf44c8a&v=4" width="100px;" alt="Foto do Autor"/>
+<img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/69893591?v=4" width="100px;" alt="Foto do Autor"/>
 <br />
 
 **Marcus Augusto da S. Vasconcellos**
 <div>
-<a href="https://www.linkedin.com/in/marcusvasconcellos" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
-<a href="mailto:marcus@vasconcellos.net.br"><img src="https://img.shields.io/badge/-Email-%23D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+<a href="https://www.linkedin.com/in/[SEU-LINKEDIN]" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+<a href="mailto:[SEU-EMAIL]"><img src="https://img.shields.io/badge/-Email-%23D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
 </div>
 
 ---
