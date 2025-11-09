@@ -100,7 +100,7 @@ Sugestões são sempre bem-vindas! Sinta-se à vontade para abrir uma *issue* co
 
 ## 📬 Autor
 
-<img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/69893591?v=4" width="100px;" alt="Foto do Autor"/>
+<img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/235125755?s=400&u=17eb556372d0509c20c85a9654d83823adf44c8a&v=4" width="100px;" alt="Foto do Autor"/>
 <br />
 
 **Marcus Augusto da S. Vasconcellos**
