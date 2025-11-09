@@ -1,5 +1,5 @@
 <h1 align="center">
-  🚀 TechCareer Pathfinder
+  🚀 TechCareer Interviewer
 </h1>
 
 <h3 align="center">
@@ -20,7 +20,7 @@
 
 ## 📖 Sobre o Projeto
 
-O **TechCareer Pathfinder** nasceu da necessidade de orientar novos talentos em meio ao vasto universo da tecnologia. Este projeto conceitual foi desenvolvido como parte do desafio "IA Mentor de Carreira" do Bootcamp **DIO CAIXA – Inteligência Artificial na Prática**.
+O **TechCareer Interviewer** nasceu da necessidade de orientar novos talentos em meio ao vasto universo da tecnologia. Este projeto conceitual foi desenvolvido como parte do desafio "IA Mentor de Carreira" do Bootcamp **DIO CAIXA – Inteligência Artificial na Prática**.
 
 O objetivo é criar um agente conversacional capaz de atuar como um entrevistador, validando interesses, avaliando disponibilidade e recomendando caminhos personalizados com base em uma lógica de decisão robusta.
 
@@ -30,7 +30,7 @@ O objetivo é criar um agente conversacional capaz de atuar como um entrevistado
 
 O coração deste projeto é o prompt estruturado que define a personalidade, regras e lógica do agente. Você pode acessar a versão mais recente diretamente abaixo:
 
-> 🔗 **Acesse o Prompt:** [Agente_1_TechCareer_Pathfinder.md](https://github.com/celloweb-ai/IA_Mentor_de_Carreira/blob/main/src/Agente_1_TechCareer_Pathfinder.md)
+> 🔗 **Acesse o Prompt:** [Agente_1_TechCareer_Interviewer.md](https://github.com/celloweb-ai/IA_Mentor_de_Carreira/blob/main/src/Agente_1_TechCareer_Interviewer.md)
 
 Sinta-se à vontade para testá-lo em LLMs como ChatGPT, Claude ou Gemini e adaptar conforme necessário!
 
@@ -71,7 +71,7 @@ Apresentação das recomendações e geração do output estruturado para os pr�
 
 ## 🧪 Cenários de Uso (Personas)
 
-Exemplos de como o **TechCareer Pathfinder** se adapta a diferentes perfis:
+Exemplos de como o **TechCareer Interviewer** se adapta a diferentes perfis:
 
 | Perfil | Cenário & Necessidade | Solução do Agente |
 | :--- | :--- | :--- |
