@@ -34,10 +34,10 @@ O agente opera em três fases rígidas para garantir consistência:
 
 ```mermaid
 graph LR
-    A[Fase 1: Coleta] -->|7 Perguntas| B(Fase 2: Análise)
-    B -->|Matriz de Decisão| C{Fase 3: Handoff}
-    C -->|Recomendação Humanizada| D[Usuário Final]
-    C -->|JSON Estruturado| E[Agente 2: Planner]
+    A["Fase 1: Coleta"] -->|"7 Perguntas"| B("Fase 2: Análise")
+    B -->|"Matriz de Decisão"| C{"Fase 3: Handoff"}
+    C -->|"Recomendação Humanizada"| D["Usuário Final"]
+    C -->|"JSON Estruturado"| E["Agente 2: Planner"]
 
 1. 📝 Coleta (Entrevista): 7 perguntas sequenciais cobrindo motivação, nível atual, disponibilidade real, preferências de rotina e experiência prévia.
 
