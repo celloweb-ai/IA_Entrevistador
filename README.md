@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-  IA Mentor de Carreira: Descubra Seu Futuro em Tech
+  IA Entrevistador: Descubra Seu Futuro em Tech
 </h3>
 
 <p align="center">
@@ -22,7 +22,7 @@
 
 O **TechCareer Pathfinder** nasceu da necessidade de orientar novos talentos em meio ao vasto universo da tecnologia. Este projeto conceitual foi desenvolvido como parte do desafio "IA Mentor de Carreira" do Bootcamp **DIO CAIXA – Inteligência Artificial na Prática**.
 
-O objetivo é criar um agente conversacional capaz de atuar como um mentor de carreira inicial, validando interesses, avaliando disponibilidade e recomendando caminhos personalizados com base em uma lógica de decisão robusta.
+O objetivo é criar um agente conversacional capaz de atuar como um entrevistador, validando interesses, avaliando disponibilidade e recomendando caminhos personalizados com base em uma lógica de decisão robusta.
 
 ---
 
