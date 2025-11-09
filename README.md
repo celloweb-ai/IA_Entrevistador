@@ -1,266 +1,66 @@
 # 🧭 TechCareer Pathfinder (Agente 1)
 
-> **Primeiro estágio do sistema multi-agentes de orientação de carreira.**
+![Version](https://img.shields.io/badge/version-1.0.0-blue?style=flat-square)
+![Status](https://img.shields.io/badge/status-stable-green?style=flat-square)
+![System](https://img.shields.io/badge/system-Multi--Agent-orange?style=flat-square)
 
-Este repositório contém o prompt fonte para o **TechCareer Pathfinder**, um agente conversacional projetado para atuar como a primeira camada de interação em um sistema inteligente de aconselhamento de carreira para o mercado de tecnologia.
+> **Sua primeira parada na transição para o mercado de tecnologia.**
+> *Este agente atua como o estágio inicial de triagem e descoberta em um ecossistema multi-agentes de orientação de carreira.*
 
-## 🎯 Objetivo do Agente
+---
 
-O **TechCareer Pathfinder** tem a missão crítica de realizar o "triunfo" inicial do usuário. Ele não apenas conversa, mas conduz uma entrevista estruturada para extrair dados vitais sobre as motivações, disponibilidade e background do usuário, finalizando com recomendações baseadas em lógica e preparando o terreno para o planejamento detalhado de estudos (Agente 2).
+## 📖 Sobre o Projeto
 
-## 🧠 Arquitetura Comportamental
+O **TechCareer Pathfinder** não é apenas um chatbot; é um **agente baseado em prompt** projetado para conduzir entrevistas de carreira estruturadas. Sua missão é eliminar a "paralisia por análise" que muitos iniciantes em tecnologia enfrentam.
 
-Este agente foi desenhado com diretrizes rígidas para garantir uma experiência de usuário fluida e profissional:
+Ele atua como um recrutador experiente que:
+1.  Mapeia o perfil do usuário (interesses, tempo, background).
+2.  Analisa os dados com uma matriz de decisão lógica.
+3.  Recomenda as 3 melhores trilhas de carreira.
+4.  **Crucial:** Prepara os dados para o próximo agente especialista (Planejador de Estudos).
 
-### Fases de Operação
+## ✨ Funcionalidades Principais
 
-1.  **📝 Fase 1: Entrevista Estruturada**
-    * Conduz 7 perguntas sequenciais (uma por vez).
-    * Mantém o foco e evita "alucinações" ou desvios de assunto.
-    * Valida respostas naturalmente antes de avançar.
+| Funcionalidade | Descrição |
+| :--- | :--- |
+| **Entrevista Linear** | Faz apenas uma pergunta por vez, garantindo foco e respostas completas. |
+| **Validação Ativa** | Reconhece as respostas do usuário antes de passar para o próximo tópico, criando uma conversa natural. |
+| **Matriz de Decisão** | Usa um sistema interno de pontuação (1-20) para classificar carreiras baseadas em 4 pilares: Aderência, Tempo, Mercado e Background. |
+| **Tech Handoff** | Gera um output estruturado (JSON) invisível ao usuário final, mas legível por máquinas/outros agentes. |
 
-2.  **📊 Fase 2: Análise e Recomendação**
-    * Aplica uma "Matriz de Decisão" interna (pontuação de 1-20).
-    * Cruza perfil do usuário (Pessoas/Dados/Código) com demandas de mercado.
-    * Gera um TOP 3 carreiras aderentes com justificativas personalizadas.
+## 🧠 Arquitetura de Operação
 
-3.  **🔄 Fase 3: Transferência (Handoff)**
-    * Após a escolha do usuário, gera um artefato técnico (`[AGENT_TRANSFER_TICKET]`).
-    * Este ticket JSON contém todos os dados estruturados necessários para que o próximo agente (Planejador de Estudos) inicie seu trabalho sem precisar re-perguntar nada.
+O agente opera em três fases rígidas para garantir consistência:
 
-## 📂 Estrutura do Repositório
+```mermaid
+graph LR
+    A[Fase 1: Coleta] -->|7 Perguntas| B(Fase 2: Análise)
+    B -->|Matriz de Decisão| C{Fase 3: Handoff}
+    C -->|Recomendação Humanizada| D[Usuário Final]
+    C -->|JSON Estruturado| E[Agente 2: Planner]
 
-```bash
-.
-├── Agente_1_TechCareer_Pathfinder.md  # O PROMPT PRINCIPAL (Cérebro do agente)
-└── README.md                          # Este arquivo
+1. 📝 Coleta (Entrevista): 7 perguntas sequenciais cobrindo motivação, nível atual, disponibilidade real, preferências de rotina e experiência prévia.
 
-Conversa com o Gemini
-criar um readme.md para o repositório contendo o desafio em anexo.
+2. 📊 Processamento (Análise): Cruzamento dos dados coletados com as demandas atuais do mercado de TI.
 
-Aqui está uma proposta de README.md detalhado e profissional para o repositório deste desafio.
+3. 🔄 Entrega (Handoff): Apresentação do "Top 3 Carreiras" e geração do ticket de transferência.
 
-Markdown
-# 🧭 TechCareer Pathfinder (Agente 1)
+🚀 Quick Start (Como Usar)
+Este é um agente "no-code" que roda diretamente dentro de grandes modelos de linguagem (LLMs).
 
-> **Primeiro estágio do sistema multi-agentes de orientação de carreira.**
+Pré-requisitos
+Acesso a um LLM de nível avançado: GPT-4o (Recomendado), Claude 3.5 Sonnet ou Gemini 1.5 Pro.
 
-Este repositório contém o prompt fonte para o **TechCareer Pathfinder**, um agente conversacional projetado para atuar como a primeira camada de interação em um sistema inteligente de aconselhamento de carreira para o mercado de tecnologia.
+Nota: Modelos menores podem não respeitar todas as diretrizes comportamentais.
 
-## 🎯 Objetivo do Agente
+Passo a Passo
+Abra o arquivo principal: Agente_1_TechCareer_Pathfinder.md.
 
-O **TechCareer Pathfinder** tem a missão crítica de realizar o "triunfo" inicial do usuário. Ele não apenas conversa, mas conduz uma entrevista estruturada para extrair dados vitais sobre as motivações, disponibilidade e background do usuário, finalizando com recomendações baseadas em lógica e preparando o terreno para o planejamento detalhado de estudos (Agente 2).
+Copie todo o conteúdo do arquivo.
 
-## 🧠 Arquitetura Comportamental
+Cole no chat do seu LLM preferido e envie.
 
-Este agente foi desenhado com diretrizes rígidas para garantir uma experiência de usuário fluida e profissional:
+O agente iniciará a entrevista automaticamente.
 
-### Fases de Operação
-
-1.  **📝 Fase 1: Entrevista Estruturada**
-    * Conduz 7 perguntas sequenciais (uma por vez).
-    * Mantém o foco e evita "alucinações" ou desvios de assunto.
-    * Valida respostas naturalmente antes de avançar.
-
-2.  **📊 Fase 2: Análise e Recomendação**
-    * Aplica uma "Matriz de Decisão" interna (pontuação de 1-20).
-    * Cruza perfil do usuário (Pessoas/Dados/Código) com demandas de mercado.
-    * Gera um TOP 3 carreiras aderentes com justificativas personalizadas.
-
-3.  **🔄 Fase 3: Transferência (Handoff)**
-    * Após a escolha do usuário, gera um artefato técnico (`[AGENT_TRANSFER_TICKET]`).
-    * Este ticket JSON contém todos os dados estruturados necessários para que o próximo agente (Planejador de Estudos) inicie seu trabalho sem precisar re-perguntar nada.
-
-## 📂 Estrutura do Repositório
-
-```bash
-.
-├── Agente_1_TechCareer_Pathfinder.md  # O PROMPT PRINCIPAL (Cérebro do agente)
-└── README.md                          # Este arquivo
-🚀 Como Usar
-Para testar ou executar este agente, não é necessário instalação de código complexo, apenas um LLM competente:
-
-Abra o arquivo Agente_1_TechCareer_Pathfinder.md.
-
-Copie todo o seu conteúdo.
-
-Cole em um LLM de sua preferência (ex: ChatGPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Pro).
-
-O agente iniciará imediatamente a entrevista com a primeira pergunta.
-
-🤖 Exemplo de Output (Handoff)
-No final da interação, o agente gerará um bloco JSON invisível para o usuário comum, mas vital para o sistema. Exemplo:
-
-JSON
-[AGENT_TRANSFER_TICKET]
-{
-  "target_agent": "Agent 2 - Study Planner",
-  "user_profile": {
-    "chosen_career": "Engenharia de Dados",
-    "study_availability_hours": "15h/semana",
-    "current_level": "Transição de carreira (vindo de Finanças)",
-    "primary_goal": "Primeiro emprego tech em 12 meses",
-    "work_preference": "Dados/Padrões",
-    "key_interests": "Análise de dados, automação",
-    "background_leverage": "Excel avançado, estatística básica"
-  },
-  "interviewer_notes": "Usuário muito analítico, preocupado com a barreira de entrada da matemática."
-}
-🛠️ Próximos Passos (Desafio)
-O output deste agente serve de input direto para o Agente 2 (Study Planner). O desafio continua na construção deste segundo especialista, que deverá ler o JSON acima e criar um cronograma de estudos semana a semana.
-
-Desenvolvido como parte do desafio de Sistemas Multi-Agentes.
-
-gere um arquivo Readme.md completo para download
-
-Aqui está o arquivo README.md pronto para ser baixado e usado no seu repositório.
-
-Markdown
-# 🧭 TechCareer Pathfinder (Agente 1)
-
-> **Primeiro estágio do sistema multi-agentes de orientação de carreira.**
-
-Este repositório contém o prompt fonte para o **TechCareer Pathfinder**, um agente conversacional projetado para atuar como a primeira camada de interação em um sistema inteligente de aconselhamento de carreira para o mercado de tecnologia.
-
-## 🎯 Objetivo do Agente
-
-O **TechCareer Pathfinder** tem a missão crítica de realizar o "triunfo" inicial do usuário. Ele não apenas conversa, mas conduz uma entrevista estruturada para extrair dados vitais sobre as motivações, disponibilidade e background do usuário, finalizando com recomendações baseadas em lógica e preparando o terreno para o planejamento detalhado de estudos (Agente 2).
-
-## 🧠 Arquitetura Comportamental
-
-Este agente foi desenhado com diretrizes rígidas para garantir uma experiência de usuário fluida e profissional:
-
-### Fases de Operação
-
-1.  **📝 Fase 1: Entrevista Estruturada**
-    * Conduz 7 perguntas sequenciais (uma por vez).
-    * Mantém o foco e evita "alucinações" ou desvios de assunto.
-    * Valida respostas naturalmente antes de avançar.
-
-2.  **📊 Fase 2: Análise e Recomendação**
-    * Aplica uma "Matriz de Decisão" interna (pontuação de 1-20).
-    * Cruza perfil do usuário (Pessoas/Dados/Código) com demandas de mercado.
-    * Gera um TOP 3 carreiras aderentes com justificativas personalizadas.
-
-3.  **🔄 Fase 3: Transferência (Handoff)**
-    * Após a escolha do usuário, gera um artefato técnico (`[AGENT_TRANSFER_TICKET]`).
-    * Este ticket JSON contém todos os dados estruturados necessários para que o próximo agente (Planejador de Estudos) inicie seu trabalho sem precisar re-perguntar nada.
-
-## 📂 Estrutura do Repositório
-
-```bash
-.
-├── Agente_1_TechCareer_Pathfinder.md  # O PROMPT PRINCIPAL (Cérebro do agente)
-└── README.md                          # Este arquivo
-🚀 Como Usar
-Para testar ou executar este agente, não é necessário instalação de código complexo, apenas um LLM competente:
-
-Abra o arquivo Agente_1_TechCareer_Pathfinder.md.
-
-Copie todo o seu conteúdo.
-
-Cole em um LLM de sua preferência (ex: ChatGPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Pro).
-
-O agente iniciará imediatamente a entrevista com a primeira pergunta.
-
-🤖 Exemplo de Output (Handoff)
-No final da interação, o agente gerará um bloco JSON invisível para o usuário comum, mas vital para o sistema. Exemplo:
-
-JSON
-[AGENT_TRANSFER_TICKET]
-{
-  "target_agent": "Agent 2 - Study Planner",
-  "user_profile": {
-    "chosen_career": "Engenharia de Dados",
-    "study_availability_hours": "15h/semana",
-    "current_level": "Transição de carreira (vindo de Finanças)",
-    "primary_goal": "Primeiro emprego tech em 12 meses",
-    "work_preference": "Dados/Padrões",
-    "key_interests": "Análise de dados, automação",
-    "background_leverage": "Excel avançado, estatística básica"
-  },
-  "interviewer_notes": "Usuário muito analítico, preocupado com a barreira de entrada da matemática."
-}
-🛠️ Próximos Passos (Desafio)
-O output deste agente serve de input direto para o Agente 2 (Study Planner). O desafio continua na construção deste segundo especialista, que deverá ler o JSON acima e criar um cronograma de estudos semana a semana.
-
-Desenvolvido como parte do desafio de Sistemas Multi-Agentes.
-
-gere um arquivo para download
-
-O arquivo solicitado não pode ser gerado diretamente para download. Posso fornecer o conteúdo completo para que você copie e salve com a extensão desejada, se isso ajudar.
-
-sim
-
-Aqui está o conteúdo completo do arquivo README.md. Você pode copiar o texto abaixo e colá-lo em um editor de texto (como Bloco de Notas, VS Code, etc.) e salvar o arquivo com o nome README.md.
-
-Markdown
-# 🧭 TechCareer Pathfinder (Agente 1)
-
-> **Primeiro estágio do sistema multi-agentes de orientação de carreira.**
-
-Este repositório contém o prompt fonte para o **TechCareer Pathfinder**, um agente conversacional projetado para atuar como a primeira camada de interação em um sistema inteligente de aconselhamento de carreira para o mercado de tecnologia.
-
-## 🎯 Objetivo do Agente
-
-O **TechCareer Pathfinder** tem a missão crítica de realizar o "triunfo" inicial do usuário. Ele não apenas conversa, mas conduz uma entrevista estruturada para extrair dados vitais sobre as motivações, disponibilidade e background do usuário, finalizando com recomendações baseadas em lógica e preparando o terreno para o planejamento detalhado de estudos (Agente 2).
-
-## 🧠 Arquitetura Comportamental
-
-Este agente foi desenhado com diretrizes rígidas para garantir uma experiência de usuário fluida e profissional:
-
-### Fases de Operação
-
-1.  **📝 Fase 1: Entrevista Estruturada**
-    * Conduz 7 perguntas sequenciais (uma por vez).
-    * Mantém o foco e evita "alucinações" ou desvios de assunto.
-    * Valida respostas naturalmente antes de avançar.
-
-2.  **📊 Fase 2: Análise e Recomendação**
-    * Aplica uma "Matriz de Decisão" interna (pontuação de 1-20).
-    * Cruza perfil do usuário (Pessoas/Dados/Código) com demandas de mercado.
-    * Gera um TOP 3 carreiras aderentes com justificativas personalizadas.
-
-3.  **🔄 Fase 3: Transferência (Handoff)**
-    * Após a escolha do usuário, gera um artefato técnico (`[AGENT_TRANSFER_TICKET]`).
-    * Este ticket JSON contém todos os dados estruturados necessários para que o próximo agente (Planejador de Estudos) inicie seu trabalho sem precisar re-perguntar nada.
-
-## 📂 Estrutura do Repositório
-
-```bash
-.
-├── Agente_1_TechCareer_Pathfinder.md  # O PROMPT PRINCIPAL (Cérebro do agente)
-└── README.md                          # Este arquivo
-🚀 Como Usar
-Para testar ou executar este agente, não é necessário instalação de código complexo, apenas um LLM competente:
-
-Abra o arquivo Agente_1_TechCareer_Pathfinder.md.
-
-Copie todo o seu conteúdo.
-
-Cole em um LLM de sua preferência (ex: ChatGPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Pro).
-
-O agente iniciará imediatamente a entrevista com a primeira pergunta.
-
-🤖 Exemplo de Output (Handoff)
-No final da interação, o agente gerará um bloco JSON invisível para o usuário comum, mas vital para o sistema. Exemplo:
-
-JSON
-[AGENT_TRANSFER_TICKET]
-{
-  "target_agent": "Agent 2 - Study Planner",
-  "user_profile": {
-    "chosen_career": "Engenharia de Dados",
-    "study_availability_hours": "15h/semana",
-    "current_level": "Transição de carreira (vindo de Finanças)",
-    "primary_goal": "Primeiro emprego tech em 12 meses",
-    "work_preference": "Dados/Padrões",
-    "key_interests": "Análise de dados, automação",
-    "background_leverage": "Excel avançado, estatística básica"
-  },
-  "interviewer_notes": "Usuário muito analítico, preocupado com a barreira de entrada da matemática."
-}
-🛠️ Próximos Passos (Desafio)
-O output deste agente serve de input direto para o Agente 2 (Study Planner). O desafio continua na construção deste segundo especialista, que deverá ler o JSON acima e criar um cronograma de estudos semana a semana.
-
-Desenvolvido como parte do desafio de Sistemas Multi-Agentes.
+🤖 Integração (O "Handoff")
+O diferencial deste agente é sua capacidade de se conectar com outros sistemas. Ao final da conversa, ele gera um bloco oculto:
