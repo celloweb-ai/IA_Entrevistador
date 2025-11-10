@@ -30,7 +30,7 @@ O objetivo é criar um agente conversacional capaz de atuar como um entrevistado
 
 O coração deste projeto é o prompt estruturado que define a personalidade, regras e lógica do agente. Você pode acessar a versão mais recente diretamente abaixo:
 
-> 🔗 **Acesse o Prompt:** [Agente_1_TechCareer_Interviewer.md](https://github.com/celloweb-ai/IA_Mentor_de_Carreira/blob/main/src/Agente_1_TechCareer_Interviewer.md)
+> 🔗 **Acesse o Prompt:** [Agente_1_TechCareer_Interviewer.md](https://github.com/celloweb-ai/IA_Entrevistador/blob/main/src/Agente_1_TechCareer_Interviewer.md)
 
 Sinta-se à vontade para testá-lo em LLMs como ChatGPT, Claude ou Gemini e adaptar conforme necessário!
 
