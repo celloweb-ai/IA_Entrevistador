@@ -1,3 +1,5 @@
+![Header](https://github.com/celloweb-ai/IA_Entrevistador/blob/main/images/interviewer.png)
+
 <h1 align="center">
   🚀 TechCareer Interviewer
 </h1>
